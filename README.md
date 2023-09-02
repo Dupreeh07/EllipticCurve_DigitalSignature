@@ -1,6 +1,7 @@
 # Elliptic curve signature  
 
 This project demonstrates a basic signature proccess.
+https://www.youtube.com/watch?v=IgXvI42TcuM&ab_channel=Dupreeh7
 
 I implemented arithmetic operations for modular math for an abealian group: division, inverse and etc. 
 Also the addition-doubling algorithm to multiply numbers by a point in polonomial time instead O(k). 
