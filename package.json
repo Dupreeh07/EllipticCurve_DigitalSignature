@@ -1,0 +1,12 @@
+{
+  "name": "ecc_signature",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "elliptic_Curve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dupreeh7",
+  "license": "ISC"
+}

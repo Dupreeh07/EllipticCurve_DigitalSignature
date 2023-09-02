@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="module"  src="./elliptic_Curve.js"></script>
+    <script type="module"  src="./components/decryptProcesses.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="LeftSide" style="display: flex; align-items: center;">
+        
+        <div id="LeftSideInnerPart" id="params" style="padding-left: 2%; width: 35vw;">
+            <div>
+            <label for="a">a: </label>
+            <input id="a" type="number" value="0"><br>
+            <label for="b">b:</label>
+            <input id="b" type="number" value="7"><br>
+            <label for="p">p:</label>
+            <input id="p" type="number" value="13"><span id="choosePrime"></span><br>
+            </div>
+   
+            <div>
+                <br>
+                <label for="A">G:</label>
+                <span>(</span><input id="Ax" type="number"></input>
+                <input id="Ay" type="number"></input>
+                <span>)</span><br><span id="onCurveChecker"></span><br>
+
+                <label for="n">k:</label>
+                <input id="n" type="number" value="1"></input>
+                <br><br>
+
+                <label for="kA">kG:</label>
+                <output id="kA" type="number" value="1"></output><br>
+            
+                <br>
+                <label >Group Order N:</label>
+                <output id="N" type="number"></output><br>
+                <label >Subgroup order n:</label>
+                <output id="SubgroupOrder" type="number"></output>
+                <!-- <label id="SGPrime"></label> -->
+                <br>
+            </div>
+            <div>
+                
+                <button id="generatePrvKey">Generate keys pair</button>
+                <button id="createSignature">Create signature(r,s)</button>
+                <button id="signVerf">Signature verifitation</button>
+                <br><br>
+                <label>Private key:</label>
+    
+                <output id="PrvKey"></output>
+                <output id="Err"></output>
+            
+                <br><br>
+                <label>Public key:</label>
+                <output id="PblKey"></output>
+                <br><br>
+                <label for>Message:</label>
+                <input id="Msg"></input>
+                <label id="Warning"></label>
+                <br><br>
+                <label>K:</label>
+                <output id="K"></output>
+                <label>r, s:</label>
+                <output id="r"></output>
+                <output id="s"></output>
+                <label>C(x,y):</label>
+                <output id="C"></output>
+                <br><br>
+                <label for="Compare>">Compare: r = Cₓ mod n,</label>
+                <br><br>
+                <output id="Compare">Verification:</output>
+            </div>
+        </div>
+        <div id="rightSide" style= "align-items: center;  height:50vh; width: 50vw; margin-left: auto">
+            <!-- <canvas id="curve-chart"></canvas> -->
+            <canvas id="finiteField"></canvas>
+        </div>
+    </div>
+
+</body>
+
+</html> 
