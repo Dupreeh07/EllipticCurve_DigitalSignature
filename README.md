@@ -4,7 +4,7 @@ This project demonstrates a basic signature proccess.
 https://www.youtube.com/watch?v=IgXvI42TcuM&ab_channel=Dupreeh7
 
 I implemented arithmetic operations for modular math for an abealian group: division, inverse and etc. 
-Also the addition-doubling algorithm to multiply numbers by a point in polonomial time instead O(k). 
+Also the addition-doubling algorithm to multiply numbers by a point. 
 it works like that:
 
 1. Double and Add algorithm for finding 16P
